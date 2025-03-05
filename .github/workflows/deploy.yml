@@ -1,0 +1,9 @@
+name: My first Action
+on: push
+
+jobs:
+ first-job:
+  runs-on: ubantu-latest
+  steps:
+    - name: print greeting
+      run: echo "hello world"
