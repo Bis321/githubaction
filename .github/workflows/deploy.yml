@@ -1,5 +1,5 @@
 name: My first Action
-on: workflow_dispatch
+on: [push,workflow_dispatch]
 
 jobs:
  first-job:
@@ -7,3 +7,10 @@ jobs:
   steps:
     - name: print greeting
       run: echo "hello world1"
+    
+    - name: Explore Food
+      run: echo "I want to eat"
+    
+    - name: Make Payment
+      run: echo "Make payment of $50"
+     
